@@ -245,9 +245,17 @@ img {
 }
 
 .btn-secondary {
-  background: rgba(10, 28, 19, 0.82);
-  border: 1px solid var(--line);
-  color: var(--text);
+  border: 1px solid rgba(107, 255, 179, 0.4);
+  color: #6bffb3;
+  background: transparent;
+  transition: 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(107, 255, 179, 0.12);
+  border-color: #6bffb3;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(107, 255, 179, 0.3);
 }
 
 .hero-facts {
@@ -601,4 +609,26 @@ img {
     padding: 20px;
     border-radius: 20px;
   }
+
+  .lang-switcher {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.lang-link {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.lang-link:hover {
+  color: var(--text);
+}
+
+.lang-link.active {
+  color: #6bffb3;
+  font-weight: 600;
+}
 }
